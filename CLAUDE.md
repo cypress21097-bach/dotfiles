@@ -17,11 +17,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Context
 
-This is a home directory, not a code project. The user works in aviation (likely a pilot or flight instructor) — documents cover A320/C909 aircraft, Vietnamese aviation regulations (VAR), crew resource management (CRM), and flight training. When assisting with document work or writing, aviation terminology and regulatory context are relevant.
+This is a home directory, not a code project. The user is a pilot — documents cover A320/C909 aircraft, Vietnamese aviation regulations (VAR), crew resource management (CRM), and flight training. When assisting with document work or writing, aviation terminology and regulatory context are relevant.
 
 ## Git Workflow
 
-After completing any meaningful unit of work, commit changes with a clear, descriptive message and push to GitHub. Don't batch unrelated changes into a single commit — keep commits focused. This ensures work is never lost and progress is always recoverable from remote.
+Commit and push to GitHub **regularly as you work** — not only at the end of a task. Treat version control as part of the workflow, not a final cleanup step.
+
+- **Commit often**: After each meaningful, self-contained change (a fix, a feature slice, a doc update), create a commit with a clear, descriptive message that explains *why* the change was made.
+- **Push regularly**: Push commits to GitHub frequently so remote always reflects current progress. Work should never exist only on the local machine.
+- **Keep commits focused**: One logical change per commit. Don't batch unrelated edits into a single commit.
+- **Write clean messages**: Use complete sentences in the imperative mood (e.g. "Add VAR cross-reference table", "Fix broken link in CRM notes"). Avoid vague messages like "updates" or "wip".
+
+The goal is that status and work are never lost — every step of progress should be recoverable from GitHub.
 
 ## Claude Code Setup
 
