@@ -8,6 +8,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Claude Code binary: `~/.local/bin/claude`
 - PATH: `~/.local/bin` is prepended to PATH (set in `~/.zshrc`)
 
+## Repository Scope
+
+This git repository is rooted at `~` (home directory), not at `~/OneDrive`. `~/.gitignore` uses an ignore-everything-then-allowlist pattern (`*` then `!.gitignore !CLAUDE.md !.zshrc`), so **only these three files are tracked** — everything else on disk (OneDrive documents, Documents, Desktop, Pictures, etc.) is present but intentionally untracked. Remote: `github.com/cypress21097-bach/dotfiles`.
+
+- `git status` will show clean even though the home directory is full of untracked personal/work files — that's expected, not a problem to fix.
+- To track a new file, add an explicit `!filename` line to `~/.gitignore` first, or the add will be silently ignored.
+- Git commands (status/diff/add/commit) run from any subdirectory (e.g. `~/OneDrive`) still operate on this same home-directory repo, since that's where `.git` lives.
+
 ## Key Locations
 
 - **OneDrive**: `~/OneDrive` (symlink to `~/Library/CloudStorage/OneDrive-Personal`) — contains aviation documents, regulatory materials (Vietnamese Aviation Regulations)
