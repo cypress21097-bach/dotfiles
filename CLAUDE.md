@@ -27,6 +27,8 @@ This git repository is rooted at `~` (home directory), not at `~/OneDrive`. `~/.
 
 This is a home directory, not a code project. The user is a pilot — documents cover A320/C909 aircraft, Vietnamese aviation regulations (VAR), crew resource management (CRM), and flight training. When assisting with document work or writing, aviation terminology and regulatory context are relevant.
 
+The user is in charge of monitoring cadet pilot training. Work may involve tracking cadet training progress, syllabus and VAR compliance, evaluation records, and related training documentation.
+
 ## Git Workflow
 
 Commit and push to GitHub **regularly as you work** — not only at the end of a task. Treat version control as part of the workflow, not a final cleanup step.
