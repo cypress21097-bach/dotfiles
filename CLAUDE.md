@@ -29,6 +29,55 @@ This is a home directory, not a code project. The user is a pilot — documents 
 
 The user is in charge of monitoring cadet pilot training. Work may involve tracking cadet training progress, syllabus and VAR compliance, evaluation records, and related training documentation.
 
+## Report Formatting Standard
+
+**Every remedial training plan and every performance analysis report must use the formatting below.** It is taken from the Safety Remedial Training Plan template (Flight Training & Standard Department, Issue 01/Rev 00, July 2026), which is the house standard. Do not invent a new look per report.
+
+This section governs *appearance*. The prose rules — state the finding, then the evidence, then the consequence; keep instructor and examiner remarks verbatim — live in `~/OneDrive/MAC/CLAUDE.md` and still apply.
+
+### Page
+
+- **A4 portrait**, 8.27 × 11.69 in (595 × 842 pt). Not US Letter.
+- Margins **2 cm (0.79 in)** left and right, ~0.6 in top, ~0.5 in bottom.
+
+### Typeface — Calibri throughout
+
+| Element | Size | Weight | Colour |
+|---|---|---|---|
+| Body text | 11 pt | Regular | `#1F1F1F` |
+| Body emphasis | 11 pt | Bold | `#1F1F1F` |
+| Section heading (ALL CAPS) | 14 pt | Bold | `#1F1F1F` |
+| Sub-heading, `▸` prefixed | 12 pt | Bold | `#1F3864` |
+| Inline accent / lead-in | 11 pt | Bold or Italic | `#1F3864` |
+| Table header row | 11–13 pt | Bold | `#FFFFFF` on `#1F3864` |
+| Header and footer | 8 pt | Regular | `#808080` |
+
+### Palette
+
+| Role | Hex |
+|---|---|
+| Accent — headings, table headers, sub-heading markers | `#1F3864` |
+| Body text | `#1F1F1F` |
+| Table borders and rules | `#B7B7B7` |
+| Shaded row / panel fill | `#F2F2F2` |
+| Text on accent fill | `#FFFFFF` |
+| Muted — header, footer, captions | `#808080` |
+
+### Structure
+
+- **Document header block** on every page: department name, document title, `Issue NN / Rev. NN`, document reference, date in `[DD MMM YYYY]`.
+- **Footer** on every page: `<document reference> — Internal training record` left, `Page N of M` right.
+- **Section headings** in ALL CAPS, 14 pt bold.
+- **Sub-headings** prefixed with `▸` in accent navy.
+- **Tables** carry a navy header row with white bold text, `#B7B7B7` borders, `#F2F2F2` for shaded rows. Use a table wherever the content is a comparison or a mapping — it is shorter than prose and easier to check.
+- **Document reference** format: `REM-TRG-<CompanyID>-<SURNAME FIRSTNAME>-<FlightNo>` for remedial plans. Performance analyses keep `<CompanyID>_<NameNoSpaces>_PerformanceAnalysis_<Topic>`.
+
+### Standard sections
+
+Remedial training plans: Summary table → Background (triggering occurrence, findings by phase, root cause) → Reference → Observable Behaviours with an OB-to-finding traceability table → the training phases, each with its own **Exit Standard** → **If Exit Standard Not Met**, with a defined action per phase.
+
+Every phase states its exit standard in writing, and every exit standard has a defined consequence when it is not met. Both are mandatory — a plan without them is incomplete.
+
 ## Git Workflow
 
 Commit and push to GitHub **regularly as you work** — not only at the end of a task. Treat version control as part of the workflow, not a final cleanup step.
