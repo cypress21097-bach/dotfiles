@@ -89,6 +89,16 @@ Commit and push to GitHub **regularly as you work** — not only at the end of a
 
 The goal is that status and work are never lost — every step of progress should be recoverable from GitHub.
 
+## Cross-Device Work (Mac and PC)
+
+This repo is **public**. It must never contain cadet names, grades, instructor remarks or any training record. All confidential work lives in OneDrive, which syncs to both machines.
+
+- **Work-in-progress notes:** each long-running project keeps a progress file next to its data in OneDrive. Read it first when resuming on either machine. Current one: `OneDrive/MAC/VJ/IOE/_Dataset/IOE_Footprint_Progress.md` (IOE LIFUS footprint redesign).
+- **Claude memory:** `OneDrive/ClaudeMemory/`. On the Mac, `~/.claude/projects/-Users-bachdo/memory` is a symlink to it. On Windows, create a directory junction from the Claude project memory folder to `%USERPROFILE%\OneDrive\ClaudeMemory`.
+- **OneDrive must be running** before reading any document; cloud-only placeholders time out otherwise.
+- **Python on the Mac:** use `/Library/Developer/CommandLineTools/usr/bin/python3` (the `/usr/bin` shims fail until the Xcode licence is accepted). Packages used: pymupdf, python-docx, python-pptx, pillow.
+- **Scripts with hard-coded Mac paths** (e.g. in `_Dataset/_raw/`) need their path constants changed on the PC.
+
 ## Claude Code Setup
 
 - Theme: dark
